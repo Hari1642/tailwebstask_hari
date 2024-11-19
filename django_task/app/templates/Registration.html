@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form name="application" method="POST" action="{% url 'registration_tailwebs' %}">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="subject">Subject:</label></td>
+                    <td><input type="text" id="subject" name="subject" placeholder="Subject name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mark">Mark:</label></td>
+                    <td><input type="number" id="mark" name="mark" placeholder="mark" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="register-btn">Register</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

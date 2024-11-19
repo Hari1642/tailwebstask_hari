@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top-button {
+    margin-left: 20px;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.top-button:hover {
+    background-color: #0056b3;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 60px 0 0 0;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+a:hover {
+    background-color: #007bff;
+    color: white;
+}
+.add-button-container {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.add-button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.add-button {
+    padding: 12px 30px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.add-button:hover {
+    background-color: #218838;
+    text-decoration: none;
+}
+
+
+.add-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007bff;
+}
+.add-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.add-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.add-button:active {
+    background-color: #1e7e34;
+    transform: scale(0.98);
+}
+
+

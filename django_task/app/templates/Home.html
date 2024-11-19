@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+</head>
+<body>
+{% csrf_token %}
+<h1>Welcome to the tailwebs company</h1>
+  <p>The Beginning. Tailwebs Technology started in 2015 with a vision of building stellar products in the market. They saw a huge gap in the quality of the products built when it is outsourced to a service based company. Hence, quality was always an important part of their journey so far.</p>
+  <p>Click here:<a href="{% url 'login_view' %}">Login</a></p>
+</body>
+</html>

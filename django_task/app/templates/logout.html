@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logged Out</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/logout.css' %}">
+</head>
+<body>
+    {% csrf_token %}
+    <div class="logout-container">
+        <h1>You have been logged out successfully!</h1>
+        <a href="{% url 'login_view' %}">Log in again</a>
+    </div>
+</body>
+</html>
