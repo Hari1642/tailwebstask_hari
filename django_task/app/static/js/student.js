@@ -35,3 +35,4 @@ editButtons.forEach(button => {
         document.getElementById('Marks').value = studentMarks;
     });
 });
+
