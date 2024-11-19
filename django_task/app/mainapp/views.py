@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login
 from django.contrib import messages
 from . models import Student
+
+def index(request):
+    return render(request,'Home.html')
+
 def login_view(request):
     if request.method == "POST":
         username = request.POST['username']
@@ -18,6 +22,7 @@ def login_view(request):
             print("User authentication failed")
             return redirect('login_view')
     return render(request,"login.html")
+
 
 def logout_view(request):
     return render(request,"logout.html",{})
