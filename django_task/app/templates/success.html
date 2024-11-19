@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <style>
+        h1 {
+           text-align: center;
+           background: lightblue;
+           color: red;
+           padding: 20px;
+           border-radius: 10px;
+        }
+        table {
+            margin: 0 auto;
+        }
+        input[type="button"] {
+            width: 200px;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+  <h1>Signup Successfully Completed!</h1>
+  {% csrf_token %}
+  <table>
+      <tr>
+          <td colspan="2" style="text-align: center;">
+              <p>Registration another response:<a href="{% url 'registration_tailwebs' %}" class="button">Registration</a></p>
+          </td>
+      </tr>
+  </table>
+</body>
+</html>
