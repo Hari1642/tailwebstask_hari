@@ -56,7 +56,7 @@ def edit_student(request, student_id):
         student.subject = request.POST.get("subject")
         student.marks = request.POST.get("marks")
         student.save()
-        return redirect("details_view")  # Redirect back to the main list
+        return redirect("details_view")
 
     context = {"student": student}
     return render(request, "edit_student.html", context)
